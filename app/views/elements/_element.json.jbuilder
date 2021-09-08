@@ -1,0 +1,2 @@
+json.extract! element, :id, :order, :name, :appearance, :atomic_mass, :boil, :category, :color, :density, :discovered_by, :melt, :molat_heat, :named_by, :number, :period, :phase, :source, :spectral_img, :summary, :symbol, :xpos, :ypos, :shells, :electron_configuration, :electron_configuration_semantic, :electron_affinity, :electronegativity_pauling, :ionization_energies, :created_at, :updated_at
+json.url element_url(element, format: :json)

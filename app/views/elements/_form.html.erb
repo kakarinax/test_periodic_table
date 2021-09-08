@@ -1,0 +1,152 @@
+<%= form_with(model: element) do |form| %>
+  <% if element.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(element.errors.count, "error") %> prohibited this element from being saved:</h2>
+
+      <ul>
+        <% element.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :order %>
+    <%= form.text_field :order %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :appearance %>
+    <%= form.text_area :appearance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :atomic_mass %>
+    <%= form.text_field :atomic_mass %>
+  </div>
+
+  <div class="field">
+    <%= form.label :boil %>
+    <%= form.text_field :boil %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.text_field :category %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color %>
+    <%= form.text_field :color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :density %>
+    <%= form.text_field :density %>
+  </div>
+
+  <div class="field">
+    <%= form.label :discovered_by %>
+    <%= form.text_field :discovered_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :melt %>
+    <%= form.text_field :melt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :molat_heat %>
+    <%= form.text_field :molat_heat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :named_by %>
+    <%= form.text_field :named_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number %>
+    <%= form.number_field :number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :period %>
+    <%= form.number_field :period %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phase %>
+    <%= form.text_field :phase %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source %>
+    <%= form.text_field :source %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spectral_img %>
+    <%= form.text_field :spectral_img %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary %>
+    <%= form.text_area :summary %>
+  </div>
+
+  <div class="field">
+    <%= form.label :symbol %>
+    <%= form.text_field :symbol %>
+  </div>
+
+  <div class="field">
+    <%= form.label :xpos %>
+    <%= form.number_field :xpos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ypos %>
+    <%= form.number_field :ypos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shells %>
+    <%= form.number_field :shells %>
+  </div>
+
+  <div class="field">
+    <%= form.label :electron_configuration %>
+    <%= form.text_area :electron_configuration %>
+  </div>
+
+  <div class="field">
+    <%= form.label :electron_configuration_semantic %>
+    <%= form.text_area :electron_configuration_semantic %>
+  </div>
+
+  <div class="field">
+    <%= form.label :electron_affinity %>
+    <%= form.text_field :electron_affinity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :electronegativity_pauling %>
+    <%= form.text_field :electronegativity_pauling %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ionization_energies %>
+    <%= form.text_field :ionization_energies %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
